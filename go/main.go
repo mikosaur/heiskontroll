@@ -1,3 +1,5 @@
 package main
 
-func main() {}
+func main() {
+	// Check tests for struct functionality testing
+}
