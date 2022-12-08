@@ -1,2 +1,2 @@
-# heiskontroll
-Redpill linpro heiskontroll oppgave
+# Heiskontroll
+Oppgave for teknisk intervju
