@@ -57,12 +57,12 @@ func (e *Elevator) GetTimeToFloorInSeconds(toFloor int) int {
 }
 
 func (e *Elevator) GoToFloor(toFloor int) error {
-	// Check if the caller is attempting to go to a floor that we do not support
 
 	if e.isEmergency {
 		return &IsEmergencyError{}
 	}
 
+	// Check if the caller is attempting to go to a floor that we do not support
 	if toFloor < e.minFloor {
 		return NewUnkownFloorError(fmt.Sprintf("lowest available floor is: %d", e.minFloor))
 	}
